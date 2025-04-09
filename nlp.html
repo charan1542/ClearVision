@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ocuscan</title>
+    <link rel="stylesheet" href="nlp.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav-bar">
+        <div class="logo">CLEARVISION</div>
+        <div class="nav-options"><a href="index.html">HOME</a></div>
+        <div class="nav-options"><a href="ocuscan.html">OCUSCAN</a></div>
+        <div class="nav-options"><a href="oculingua.html">OCULINGUA</a></div>
+        <div class="nav-options"><a href="diseases.html">ENCYCLOPEDIA</a></div>
+      </div>
+    </div>
+
+    <div class="mid_part">
+      <div class="headings">
+        <h1>OCULINGUA</h1>
+        <p>Select your symptoms to Predict your disease</p>
+      </div>
+      <form
+        class="p-3 text-center"
+        action="/"
+        ,
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <select class="selectpicker" multiple data-live-search="true">
+          <option>Blurred Vision</option>
+          <option>Hazy Vision</option>
+          <option>Distorted Vision</option>
+          <option>Morning crusting</option>
+          <option>Difficulty Seeing at Night</option>
+        </select>
+        <input
+          class="btn btn-primary mt-3"
+          type="submit"
+          value="Predict Disease"
+        />
+      </form>
+    </div>
+
+    <footer>
+      <div class="line"></div>
+      <div class="footer-top">
+        <div class="footer-top-left">
+          <p class="footer-heading" id="one">DETECT</p>
+          <p class="footer-heading" id="two">TREAT</p>
+          <p class="footer-heading" id="three">CARE</p>
+          <p class="footer-heading" id="four">PROTECT</p>
+        </div>
+        <div class="footer-top-right">
+          <ul class="footer-links">
+            <li class="footer-links-options">
+              <a href="ocuscan.html">OcuScan</a>
+            </li>
+            <li class="footer-links-options"><a href="">OcuLingua</a></li>
+            <li class="footer-links-options">
+              <a href="diseases.html">Encyclopedia</a>
+            </li>
+            <li class="footer-links-options">
+              <a href="oculingua.html">OcuLingua</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sociallinks">
+        <ul>
+          <li>
+            <a href="https://github.com/charan1542/ClearVision"
+              ><i class="fab fa-github" style="font-size: 24px"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="line"></div>
+      <div class="footer-down">
+        <div class="website-name">CLEARVISION</div>
+        <ul class="ternarylinks">
+          <li><a href="ocuscan.html">Ocuscan</a></li>
+          <li><a href="oculingua.html">Oculingua</a></li>
+          <li><a href="diseases.html">Encyclopedia</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

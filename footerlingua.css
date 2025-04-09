@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Inter:wght@700&family=Raleway:wght@600&family=Space+Grotesk:wght@300&display=swap');
+
+
+*{
+    padding:0%;
+    margin: 0%;
+}
+
+ul{
+    list-style: none;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25vh;
+    padding-top: 10vh;
+}
+
+footer a{
+    color: white;
+}
+
+.footer-top{
+    display: grid;
+    grid-template-columns: auto auto;
+    min-height: 45vh;
+    column-gap: 30vh;
+    padding-top: 10vh;
+}
+
+.footer-top-left{
+    display: flex;
+    flex-direction:column;
+    line-height: 10vh;
+    font-size: 400%;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-top-right{
+    padding-top: 20vh;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-top-right ul li{
+    padding: 1.5%;
+}
+
+@keyframes bulge{
+    from{
+        scale: 1;
+    }
+
+    to{
+        scale:1.15;
+    }
+}
+
+.footer-top-right ul li:hover{
+    animation-name: bulge;
+    animation-duration: 0.5s;
+    transition:ease-in;
+    scale: 1.15;
+}
+
+.sociallinks
+{
+    padding: 2vh;
+    padding-right: 20vh;
+    padding-bottom: 5vh;
+}
+
+.sociallinks ul
+{
+    list-style-type: none;
+    display:flex
+}
+
+.sociallinks ul li
+{
+    padding-inline: 2vh;
+}
+
+.sociallinks ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.sociallinks ul li:hover
+{
+    cursor: pointer;
+}
+
+.line
+{
+    background-color: grey;
+    height: 0.25vh;
+    border-right-style: solid;
+    border-right-color: aliceblue;
+    border-left-style: solid;
+    border-left-color: aliceblue;
+}
+
+.footer-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5vh 0vh;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ternarylinks{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vh;
+}

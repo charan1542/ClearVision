@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Inter:wght@700&family=Raleway:wght@600&family=Space+Grotesk:wght@300&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes bulge{
+    from{
+        scale: 1;
+    }
+
+    to{
+        scale:1.15;
+    }
+}
+
+@keyframes bulgecard{
+    from{
+        scale: 1;
+    }
+
+    to{
+        scale:1.05;
+    }
+}
+
+@keyframes bulgecardsymp{
+    from{
+        scale: 1;
+    }
+
+    to{
+        scale:1.02;
+    }
+}
+
+.header{
+    min-height: 15vh;
+    color:white;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: large;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+}
+
+.logo{
+    padding: 3rem 1rem;
+    font-size: xx-large;
+}
+
+.nav-options{
+    padding: 3.5rem 2.5rem;
+}
+
+.nav-options:hover{
+    animation-name: bulge;
+    animation-duration: 0.5s;
+    transition:ease-in;
+    scale: 1.15;
+}
+
+.heading-div{
+    min-height: 20vh;
+    background-color: black;
+    color: white;
+    padding: 5vh 10vh;
+}
+
+.heading{
+    font-size: 600%;
+    overflow: hidden;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    padding-left: 15vh;
+}
+
+.Retinal-Diseases{
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+.disease-type{
+    padding: 5vh 20vh;
+    padding-bottom: 0%;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 500%;
+    line-height: 11vh;
+    padding-bottom: 0%;
+}
+
+.cards-div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 3vh;
+    row-gap: 5vh;
+    padding: 0vh 20vh;
+}
+
+.card{
+    border: 2px solid black;
+    min-height: 30vh;
+    padding: 5vh;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 3vh;
+}
+
+.card:hover{
+    background-color: black;
+    color: white;
+    animation-name: bulgecard;
+    animation-duration: 0.5s;
+    transition:ease-in;
+    scale:1.05
+}
+
+.card-subheadings{
+    font-size: 120%;
+}
+
+.disease-name{
+    font-size: 200%;
+    padding-bottom: 2vh;
+}
+
+.card a{
+    color:darkolivegreen;
+}
+
+.disease-type-line{
+    background-color: grey;
+    height: 0.15vh;
+    border-right-style: solid;
+    border-right-color: aliceblue;
+    border-left-style: solid;
+    border-left-color: aliceblue;
+    margin-left:15vh;
+    margin-right: 15vh;
+}
+
+.cards-div-3by3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3vh;
+    row-gap: 5vh;
+    padding: 0vh 30vh;
+}
+
+.heading-btn{
+    align-items: end;
+    justify-content: end;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5vh;
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#symptoms{
+    background-color: #000000;
+    color: white;
+    visibility:collapse;   
+    padding :0vh;
+}
+
+.cards-div-5by5{
+    /*display: flex;
+    flex-direction: column;
+    row-gap: 3vh;*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3vh;
+    row-gap: 5vh;
+    padding: 10vh 5vh;
+}
+
+.cards-div-5by5 .card{
+    border: 2px solid white;
+}
+
+.cards-div-5by5 .card:hover{
+    background-color: white;
+    color: black;
+    animation-name: bulgecardsymp;
+    animation-duration: 0.5s;
+    transition:ease-in;
+    scale:1.02
+}
